@@ -1,17 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import HeadingComponentFunctional from './HeadingComponentFunctional';
+import HeadingComponentUsingClass from './HeadingComponentUsingClass';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Counter from './Counter';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+
+const CurrentTime =()=>
+{
+  return <p>{new Date().toLocaleTimeString()} ------
+
+  <HeadingComponentUsingClass title="This is a Class Component"/></p>
+};
+setInterval(()=>{
+  root.render(
+    <React.StrictMode>
+    <HeadingComponentFunctional title="This is a Functional Componenet"/>
+      <CurrentTime/>
+      <Counter/>
+    </React.StrictMode>
+  );
+},1000);
+
+
+

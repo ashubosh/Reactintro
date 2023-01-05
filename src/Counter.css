@@ -1,0 +1,11 @@
+.Counter-component{
+    padding: 24px;
+    margin: 24px;
+    border: 2px solid rgb(116, 31, 31);
+}
+.Counter-component button{
+    margin: 20px;
+}
+.Counter-component p{
+    font-size: 28;
+}
