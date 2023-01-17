@@ -9,3 +9,11 @@
 .Counter-component p{
     font-size: 28;
 }
+.Counter-type span{
+    padding:10px;
+    font-size: 16px;
+    background-color: blue;
+    color: azure;
+    margin: 12px;
+
+}

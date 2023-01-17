@@ -1,0 +1,19 @@
+.user-container{
+ border: 2 saddlebrown;
+ margin: 12px;
+ padding: 10px;
+ background-color: blueviolet;  
+ width: 200px; 
+}
+.user-container.name{
+    font-size: 16px;
+    font-weight: bold;
+    color:brown
+}
+.user-container .details{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: aqua;
+}
